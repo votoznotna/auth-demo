@@ -4,3 +4,17 @@ title='Members'
 block content
   h1 Members Area
   p Welcome to the members area
+  if users
+    table.table
+      thead
+        tr 
+          th Name
+          th Username 
+          th Emamil
+      tbody
+        each user, i in users
+          tr
+            td= user.name
+            td= user.uname 
+            td= user.email
+

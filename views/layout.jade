@@ -23,8 +23,8 @@ html
             a(href='/users/login') Login
         ul.nav.navbar-nav.navbar-right
           if person
-            li
-              span(style='color:white;font-size:1.3vw;padding-right:10px;') Hello #{person.name}, 
+            li.nav-item(style='color:white; padding-right:10px;')
+              span Hello #{person.name}, 
                a(href='/users/logout') Logout
     .container
       !=messages()
